@@ -10,7 +10,7 @@ GET: curl -v http://localhost:8090/mybookcatalog/favourites
 
 returns all stored books in the db with ratings and info from the external api
 
-POST: curl -d '{"isbn":'',"rating":''}' -H "Content-Type: application/json" http://localhost:8090/mybookcatalog/favourites
+POST: curl -d '{"isbn":" ","rating":" "}' -H "Content-Type: application/json" http://localhost:8090/mybookcatalog/favourites
   
 adds a new or updates an existing record, returns the book with its info.  request body param validation: isbn must be Not Null, rating must be an integer Min:1 Man:5 and can be null.
 
